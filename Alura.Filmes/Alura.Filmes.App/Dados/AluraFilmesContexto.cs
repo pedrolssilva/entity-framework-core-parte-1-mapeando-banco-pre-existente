@@ -13,7 +13,7 @@ namespace Alura.Filmes.App.Dados
         public DbSet<Ator> Atores { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=AluraFilmes;User Id=sa;Password=MSSQL_SA_123;");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=AluraFilmesTST;User Id=sa;Password=MSSQL_SA_123;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -40,7 +40,7 @@ namespace Alura.Filmes.App.Dados
                 .IsRequired();
 
             modelBuilder.Entity<Ator>()
-                .Property<DateTime>("last_update")
+                .Property<DateTime>("last_updated")
                 .HasColumnType("datetime")
                 .IsRequired();
 

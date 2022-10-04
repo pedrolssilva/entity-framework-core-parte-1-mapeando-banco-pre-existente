@@ -36,7 +36,7 @@ namespace Alura.Filmes.App.Migrations
                         .HasColumnName("last_name")
                         .HasColumnType("varchar(45)");
 
-                    b.Property<DateTime>("last_update")
+                    b.Property<DateTime>("last_updated")
                         .HasColumnType("datetime");
 
                     b.HasKey("Id");
