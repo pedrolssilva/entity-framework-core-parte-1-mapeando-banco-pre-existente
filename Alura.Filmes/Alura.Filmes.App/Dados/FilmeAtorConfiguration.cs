@@ -5,7 +5,7 @@ using System;
 
 namespace Alura.Filmes.App.Dados
 {
-    internal class FilmeAtorConfiguration : IEntityTypeConfiguration<FilmeAtor>
+    public class FilmeAtorConfiguration : IEntityTypeConfiguration<FilmeAtor>
     {
         public void Configure(EntityTypeBuilder<FilmeAtor> builder)
         {

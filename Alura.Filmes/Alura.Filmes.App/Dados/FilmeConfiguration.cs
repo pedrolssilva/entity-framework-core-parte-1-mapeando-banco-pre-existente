@@ -11,22 +11,22 @@ namespace Alura.Filmes.App.Dados
         public void Configure(EntityTypeBuilder<Filme> builder)
         {
             builder
-            .ToTable("film");
+                .ToTable("film");
 
             builder
                 .Property(f => f.Id)
-            .HasColumnName("film_id");
+                .HasColumnName("film_id");
 
             builder
                 .Property(f => f.Titulo)
                 .HasColumnName("title")
                 .HasColumnType("varchar(255)")
-            .IsRequired();
+                .IsRequired();
 
             builder
                 .Property(f => f.Descricao)
                 .HasColumnName("description")
-            .HasColumnType("text");
+                .HasColumnType("text");
 
             builder
                 .Property(f => f.AnoLancamento)
@@ -35,7 +35,7 @@ namespace Alura.Filmes.App.Dados
 
             builder
                 .Property(f => f.Duracao)
-            .HasColumnName("length");
+                .HasColumnName("length");
 
             builder
                 .Property<DateTime>("last_update")
