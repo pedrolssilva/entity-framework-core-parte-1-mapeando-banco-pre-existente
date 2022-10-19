@@ -135,6 +135,10 @@
     <Compile Include="Migrations\20221004222313_Inicial.designer.cs">
       <DependentUpon>20221004222313_Inicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20221019233525_filme-ator-categoria.cs" />
+    <Compile Include="Migrations\20221019233525_filme-ator-categoria.designer.cs">
+      <DependentUpon>20221019233525_filme-ator-categoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AluraFilmesContextoModelSnapshot.cs" />
     <Compile Include="Negocio\Ator.cs" />
     <Compile Include="Negocio\Categoria.cs" />

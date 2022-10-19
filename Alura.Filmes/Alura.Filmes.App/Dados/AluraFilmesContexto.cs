@@ -18,7 +18,7 @@ namespace Alura.Filmes.App.Dados
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=AluraFilmes;User Id=sa;Password=MSSQL_SA_123;");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=AluraFilmesTST;User Id=sa;Password=MSSQL_SA_123;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
