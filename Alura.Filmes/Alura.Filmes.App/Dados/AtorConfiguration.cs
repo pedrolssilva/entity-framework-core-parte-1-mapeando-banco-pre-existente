@@ -32,8 +32,12 @@ namespace Alura.Filmes.App.Dados
             builder
                 .Property<DateTime>("last_update")
                 .HasColumnType("datetime")
-                //.HasDefaultValueSql("getdate()")
+                .HasDefaultValueSql("getdate()")
                 .IsRequired();
+
+            builder
+                .HasIndex(a => a.UltimoNome)
+                .HasName("idx_actor_last_name");
         }
     }
 }
