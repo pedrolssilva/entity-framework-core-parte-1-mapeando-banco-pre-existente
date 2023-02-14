@@ -55,6 +55,10 @@ namespace Alura.Filmes.App.Dados
                 .WithMany(i => i.FilmesOriginais)
                 .HasForeignKey("original_language_id");
 
+            builder
+                .Property(f => f.Classificacao)
+                .HasColumnName("rating")
+                .HasColumnType("varchar(10)");
         }
     }
 }

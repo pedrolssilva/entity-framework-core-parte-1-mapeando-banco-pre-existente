@@ -152,6 +152,14 @@
     <Compile Include="Migrations\20230209222543_UniqueAtorPrimeiroUltimoNome.designer.cs">
       <DependentUpon>20230209222543_UniqueAtorPrimeiroUltimoNome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20230214220137_Classificacao.cs" />
+    <Compile Include="Migrations\20230214220137_Classificacao.designer.cs">
+      <DependentUpon>20230214220137_Classificacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230214221337_FilmeCheckConstraint.cs" />
+    <Compile Include="Migrations\20230214221337_FilmeCheckConstraint.designer.cs">
+      <DependentUpon>20230214221337_FilmeCheckConstraint.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AluraFilmesContextoModelSnapshot.cs" />
     <Compile Include="Negocio\Ator.cs" />
     <Compile Include="Negocio\Categoria.cs" />
